@@ -31,7 +31,7 @@
 }
 
 body {
-    font-family:"Rubik";
+    font-family:"Rubik", sans-serif;
     font-size: 18px;
     line-height: 30px;
     color: #444444;
@@ -101,14 +101,19 @@ body {
     color: #ff0000;
 }
 
-.promo-button-next {
-    background-image: url("images/righ-tall-arrow-1.svg");
+
+.promo-button-prev {
+    height: 60px;
+    width: 20px;
+    background-image: url("../img/left-tall-arrow-1.svg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
 
-.promo-button-prev {
-    background-image: url("images/left-tall-arrow-1.svg");
+.promo-button-next {
+    height: 60px;
+    width: 20px;
+    background-image: url("../img/right-tall-arrow-1.svg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -126,7 +131,7 @@ body {
 
 .promo-list-item-tagline {
     color:#000000;
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 50px;
     line-height: 50x;
@@ -161,6 +166,11 @@ body {
 
 .services-group {
     background-color: #F0F0F0;
+    background-image:url("../img/delivery-man.svg");
+    background-size: 164px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
 }
 
 .services-list-item-name{
@@ -176,7 +186,7 @@ body {
 .services-delivery-link {
     font-family: "Raleway", sans-serif;
     font-size: 18px;
-    line-height: 21px;
+    line-height:47px;
     font-weight: 800;
     text-align: center;
     color: #000000;
@@ -184,6 +194,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 3.6px;
 }
+
 
 .subtitle-h2{
     color: #000000;
@@ -197,6 +208,12 @@ body {
 
 .services-delivery{
     background-color: #F0F0F0;
+    background-image:url("../img/delivery-1.svg");
+    background-size: 47px;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: center;
+
 }
 
 .contacts-address-subtitle{
