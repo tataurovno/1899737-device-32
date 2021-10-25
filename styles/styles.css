@@ -39,6 +39,8 @@ body {
     background-color: #FFFFFF;
 }
 
+
+
 .button {
     font-family: "Raleway", sans-serif;
     font-size: 18px;
@@ -145,6 +147,7 @@ body {
 .promo-list-item-table-values{
     color:#000000;
     font-size: 36px;
+
 }
 
 .promo-list-item-table-parameters{
@@ -152,7 +155,30 @@ body {
     font-size: 16px;
 }
 
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+.categories-list{
+  width: 1160px;
+  height: 320px;
+  background-repeat: no-repeat;
+}
+
+.categories-item{
+    display: inline-block;
+    width: 160px;
+    height: 320px;
+}
+
 .categories-link{
+    text-decoration: none;
+    width: 160px;
+    height: 320px;
+    margin-top: 100px;
+    padding-top: 120px;
+    background-repeat: no-repeat;
+}
+
+.categories-title{
     color:#000000;
     font-family:"Raleway",sans-serif;
     font-size: 18px;
@@ -161,16 +187,87 @@ body {
     text-align: left;
     font-style: normal;
     letter-spacing: -0.36px;
-    text-decoration: none;
 }
 
-.services-group {
+.inner {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color:#FFE17F;
+}
+
+.cat-img-1{
+    background-image: url("../img/virtual-reality.svg");
+    background-size: 97px 55px;
+    background-position: 0% 0%;
+}
+
+.cat-img-2{
+    background-image: url("../img/monopod.svg");
+    background-size: 86px 117px;
+    background-position: 0% 0%;
+}
+
+.cat-img-3{
+    background-image: url("../img/action-camera.svg");
+    background-size: 72px 87px;
+    background-position: 0% 0%;
+}
+
+.cat-img-4{
+    background-image: url("../img/fitness-bracelet.svg");
+    background-size: 107px 65px;
+    background-position: 0% 0%;
+}
+
+.cat-img-5{
+    background-image: url("../img/smart-watch.svg");
+    background-size: 56px 98px;
+    background-position: 0% 0%;
+}
+
+.cat-img-6{
+    background-image: url("../img/copter.svg");
+    background-size: 132px 70px;
+    background-position: 0% 0%;
+}
+
+
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+SERVICES*/
+
+.services-list-item-description{
+    height: 288px;
+    width: 1440px;
+    margin-top: 169px;
+    margin-bottom: 90px;
+}
+ .delivery-img{
     background-color: #F0F0F0;
     background-image:url("../img/delivery-man.svg");
     background-size: 164px;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: top;
+}
+
+.warranty-img{
+  background-color: #F0F0F0;
+  background-image:url("../img/warranty-1.svg");
+  background-size: 164px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+}
+
+.credit-img{
+  background-color: #F0F0F0;
+  background-image:url("../img/credit-1.svg");
+  background-size: 164px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
 }
 
 .services-list-item-name{
@@ -183,18 +280,17 @@ body {
     font-style: normal;
 }
 
-.services-delivery-link {
+.services-delivery-link-txt {
     font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    line-height:47px;
+    font-size: 20px;
+    line-height:23px;
     font-weight: 800;
     text-align: center;
     color: #000000;
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 3.6px;
+    letter-spacing: 4px;
 }
-
 
 .subtitle-h2{
     color: #000000;
@@ -215,6 +311,7 @@ body {
     background-position-y: center;
 
 }
+
 
 .contacts-address-subtitle{
     font-weight: 700;
@@ -266,12 +363,7 @@ body {
     letter-spacing: 3.6px;
 }
 
-
-
-
-
-
-
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 
 
 /* Catalog */
@@ -427,7 +519,7 @@ body {
 /* footer */
 
 .footer {
-    background-color: #444444;
+    background-color:#444444;
     color: #FFFFFF;
 }
 
@@ -460,4 +552,49 @@ body {
     font-weight: 400;
     text-align: right;
 }
+
+
+.footer-social-list{
+  width: 200px;
+  height: 40px;
+  background-repeat: no-repeat;
+}
+
+.footer-social-item{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    background-color: #18c02e;
+    opacity: 30%;
+}
+
+.footer-social-link{
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+}
+
+.facebook{
+    background-image: url("../img/facebook-1.svg");
+    background-size: 18px 9px;
+    background-position-x: 15%;
+    background-position-y: 80%;
+}
+
+.instagram{
+    background-image: url("../img/instagram-1.svg");
+    background-size: 16px 16px;
+    background-position-x: 15%;
+    background-position-y: 80%;
+}
+
+.twitter{
+    background-image: url("../img/twitter-1.svg");
+    background-size: 14px 15px;
+    background-position-x: 15%;
+    background-position-y: 80%;
+}
+
 
