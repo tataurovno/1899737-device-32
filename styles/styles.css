@@ -54,6 +54,16 @@ body {
   letter-spacing: 3.6px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /* Pages */
 
@@ -207,48 +217,40 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 }
 
 
-.cat-img-1{
+.cat-img-1::before{
   background-image: url("../img/virtual-reality.svg");
-  background-size: 97px 55px;
-  background-position: 30% 30%;
+  background-position: 50%;
   background-repeat: no-repeat;
-
 }
 
-.cat-img-2{
+.cat-img-2::before{
   background-image: url("../img/monopod.svg");
-  background-size: 86px 117px;
-  background-position: 30% 30%;
+  background-position: 50% 100%;
   background-repeat: no-repeat;
 }
 
-.cat-img-3{
+.cat-img-3::before{
   background-image: url("../img/action-camera.svg");
-  background-size: 72px 87px;
-  background-position: 30% 30%;
+  background-position: 50%;
   background-repeat: no-repeat;
 }
 
-.cat-img-4{
+.cat-img-4::before{
   background-image: url("../img/fitness-bracelet.svg");
-  background-size: 107px 65px;
-  background-position: 30% 30%;
+  background-position: 50%;
   background-repeat: no-repeat;
 }
 
-.cat-img-5{
+.cat-img-5::before{
   background-image: url("../img/smart-watch.svg");
-  background-size: 56px 98px;
-  background-position-x: 130%;
-  background-position-y: 35%;
+  background-position: 50%;
+  background-repeat: no-repeat;
 }
 
-.cat-img-6{
+.cat-img-6::before{
   background-image: url("../img/copter.svg");
-  background-size: 132px 70px;
-  background-position-x: 130%;
-  background-position-y: 35%;
-
+  background-position: 50%;
+  background-repeat: no-repeat;
 }
 
 
@@ -583,7 +585,6 @@ background-position-y: top;
   align-items: center;
 }
 
-
 .footer-social-item{
   width: 40px;
   height: 40px;
@@ -593,35 +594,29 @@ background-position-y: top;
   background-repeat: no-repeat;
 }
 
-
-.footer-social-link::before{
-  content:"";
-  display: inline-block;
-  vertical-align: middle;
-  width: 40px;
-  height: 40px;
-  padding-bottom:5px;
-
+.footer-social-link{
+  display:flex;
+  height: 100%;
 }
 
 .facebook{
-  margin-left: 16px;
   background-image: url("../img/facebook-1.svg");
-  background-size: 9px 18px;
+  background-size:9px 18px;
+  background-position: 50%;
   background-repeat: no-repeat;
 }
 
 .instagram{
-  margin-left: 12px;
   background-image: url("../img/instagram-1.svg");
-  background-size: 16px 16px;
+  background-size:16px 16px;
+  background-position: 50%;
   background-repeat: no-repeat;
 }
 
 .twitter{
-  margin-left: 13px;
   background-image: url("../img/twitter-1.svg");
-  background-size: 15px 14px;
+  background-size:15px 14px;
+  background-position: 50%;
   background-repeat: no-repeat;
 }
 
