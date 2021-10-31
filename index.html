@@ -3,34 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
 
   <body>
     <header class="header">
+      <a class="logo" href="index.html">
+        <img class="logo-black" src="img/device-black.svg" height="36" width="145" alt="Логотип Интернет-магазина гаджетов ''Девайс''">
+      </a>
       <nav class="navigation">
-        <a class="logo" href="index.html">
-          <img class="logo-black" src="img/device-black.svg" height="40" width="145" alt="Логотип Интернет-магазина гаджетов ''Девайс''">
-        </a>
-
-        <form class="search" action="https://echo.htmlacademy.ru/" method="post">
-          <button class="search-button" type="submit">
-            <label class="visually-hidden">Поиск по сайту</label>
-          </button>
-          <input class="search-input" type="text" name="search" placeholder="Поиск по сайту">
-        </form>
-
         <div class="user-menu">
-          <a class="user-menu-link" href="#">
+          <form class="search" action="https://echo.htmlacademy.ru/" method="post">
+            <button class="search-button" type="submit">
+              <label class="visually-hidden">Поиск по сайту</label>
+            </button>
+            <input class="search-input" type="text" name="search" placeholder="Поиск по сайту">
+          </form>
+          <a class="user-menu-link in" href="#">
             <span class="user-menu-link-txt">Войти</span>
           </a>
-          <a class="user-menu-link" href="#">
+          <a class="user-menu-link out" href="#">
             <span class="visually-hidden">Выйти</span>
           </a>
-          <a class="user-menu-link" href="#">
+          <a class="user-menu-link compare" href="#">
             <span class="user-menu-link-txt">Сравнить</span>
           </a>
-          <a class="user-menu-link" href="#">
+          <a class="user-menu-link basket" href="#">
             <span class="user-menu-basket-quantity">2</span>
             <span class="user-menu-link-txt" >Корзина</span>
           </a>
@@ -100,7 +98,7 @@
           </button>
         </div>
 
-        <ol class="visually-hidden">
+        <ol class="promo-list">
           <li class="promo-list-item">
             <span class="promo-list-item-number">01</span>
             <a class="promo-list-item-image-link" href="#">
