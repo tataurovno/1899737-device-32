@@ -62,6 +62,34 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  vertical-align: top;
+}
+
+.button-current{
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  text-align: center;
+  color: #FFE17F;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  vertical-align: top;
+}
+
+.button-orange{
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  text-align: center;
+  color: #000000;
+  background-color:#FFC700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  vertical-align: top;
 }
 
 .visually-hidden {
@@ -78,36 +106,38 @@ body {
 
 /* Pages */
 
+.header{
+  width:1160px;
+  height:190px;
+  padding:0;
+  margin:0 auto;
+}
 
 .navigation{
-  width:1160px;
-  height:300px;
+  height:150px;
   color: #000000;
   background-color:#FFE17F;
   margin-top:40px;
-  margin-left:auto;
-  margin-right:auto;
   display: flex;
-  padding:0;
   flex-direction:column;
 }
 
 .logo{
   width:145px;
   height:36px;
-  display:block;
   margin-left:61px;
-  margin-top:-23px;
+  margin-top:0px;
   padding-top:0px;
+  position:relative;
+  top:-23px;
 }
 
 .user-menu{
-  width:1160px;
   display: flex;
   flex-direction:row;
   color: #000000;
   background:  #FFE17F;
-  margin-top:36px;
+  margin-top:13px;
 }
 
 
@@ -138,7 +168,6 @@ body {
   margin-left:20px;
   margin-top:auto;
   margin-bottom:auto;
-  height:20px;
   font-size: 16px;
   line-height: 19px;
   opacity: 30%;
@@ -217,7 +246,6 @@ body {
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
 .main-menu{
-  width:1160px;
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -289,13 +317,12 @@ body {
   margin:0px;
   padding:0px;
   list-style: none;
-  display:flex;
+  display:none;
   flex-direction: column;
 }
 
 .main-menu-categories-item{
   width:236px;
-  height:18px;
   list-style: none;
   margin:0px;
   padding:0px;
@@ -310,35 +337,32 @@ body {
 
 /*************___MAIN___*************************/
 
-.main-container{
+.main-index{
   flex-grow:1;
 }
 
+/*
 .page-container{
   width:1160px;
   margin:0 auto;
 }
+*/
 
 .promo{
 width:1160px;
-margin-top:-150px;
-margin-left:auto;
-margin-right:auto;
+margin:0 auto;
 display:flex;
 flex-direction: column;
 }
 
 .promo-list{
-  width:1160;
   margin:0;
   padding:0;
+  box-shadow: inset 0 150px #FFE17F;
 }
 
 .promo-list-item-1{
-  width:1160px;
   display:flex;
-  flex-direction: row;
-  margin:0 auto;
 }
 
 .promo-button-prev {
@@ -369,11 +393,11 @@ flex-direction: column;
   width:560px;
   height:560px;
   margin-left:-39px;
+  outline: 1px solid #b46e6e;
 }
 
 .promo-list-item-container{
   width:560px;
-  height:560px;
   margin-left:60px;
   display:flex;
   flex-direction: column;
@@ -382,15 +406,12 @@ flex-direction: column;
   padding:0px;
 }
 .promo-list-item-number{
-  display:flex;
   width:250px;
-  height:135px;
-  margin-top:31px;
   margin-left:auto;
-  margin-right:20px;
+  margin-right:49px;
   padding-left:auto;
-  padding-right:auto;
-  color: #978035;
+  padding-top:31px;
+  color:#ffffff;
   font-family:"Rubik", sans-serif;
   font-size: 180px;
   line-height: 135px;
@@ -399,35 +420,35 @@ flex-direction: column;
   vertical-align: baseline;
   text-decoration: none;
   text-transform: uppercase;
+  outline: 1px solid #b46e6e;
 }
 
 .promo-list-item-tagline {
-  display:flex;
-  width:560px;
-  height:110px;
-  margin-top:-43px;
-  margin-bottom:0px;
+  margin:0 auto;
   color:#000000;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
-  text-align: left;
+  outline: 1px solid #b46e6e;
+  /*position:relative;
+  top:-43px;*/
 }
 
 .promo-list-item-description{
-  display:flex;
-  width:560px;
-  height:80px;
-  margin-top:19px;
-  margin-bottom:0px;
+  margin:0 auto;
+  padding-top:19px;
+  outline: 1px solid #b46e6e;
+
 }
 
 .promo-pagination{
-  width:560px;
-  margin-top:30px;
+  margin-left:0;
+  margin-top:0;
+  padding-top:30px;
   display:flex;
   flex-direction: row;
+  outline: 1px solid #b46e6e;
 }
 
 .promo-list-item-button{
@@ -446,6 +467,7 @@ flex-direction: column;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  outline: 1px solid #b46e6e;
 }
 
 .promo-pagination-button-1{
@@ -496,17 +518,19 @@ flex-direction: column;
 
 .promo-list-table{
   width:160;
-  margin-top:70px;
-  margin-bottom:0px;
-  padding:0;
+  margin-left:0;
+  margin-top:0;
+  margin-bottom:0;
+  padding-top:70px;
+  outline: 1px solid #b46e6e;
 }
 
 td.td-promo{
-  margin-top:70px;
   width:160px;
   height:41px;
   padding:0;
   vertical-align: top;
+
 }
 
 .promo-list-item-table-values{
@@ -514,6 +538,7 @@ td.td-promo{
   font-size: 36px;
   line-height: 30px;
   vertical-align: top;
+  outline: 1px solid #b46e6e;
 }
 
 .promo-list-item-table-parameters{
@@ -521,18 +546,17 @@ td.td-promo{
   font-size: 16px;
   line-height: 30px;
   vertical-align: top;
+  outline: 1px solid #b46e6e;
 }
 
 .promo-list-item-2{
-  width:1160px;
-  display:flex;
+  display:none;
   flex-direction: row;
   margin:0 auto;
 }
 
 .promo-list-item-3{
-  width:1160px;
-  display:flex;
+  display:none;
   flex-direction: row;
   margin:0 auto;
 }
@@ -541,9 +565,13 @@ td.td-promo{
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 */
 
+.categories{
+  width:1160px;
+  margin:0 auto;
+}
+
 .categories-list{
   width: 1160px;
-  height: 253px;
   background-repeat: no-repeat;
   display: flex;
   list-style: none;
@@ -554,7 +582,6 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 .categories-item{
   width: 160px;
-  height: 253px;
   margin-right:40px;
 }
 
@@ -629,40 +656,116 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 /*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 SERVICES*/
 
-.services-list-item-description{
-  height: 288px;
-  width: 1440px;
-  margin-top: 169px;
-  margin-bottom: 90px;
-}
-.delivery-img{
-  background-color: #F0F0F0;
-  background-image:url("../img/delivery-man.svg");
-  background-size: 164px;
+.services{
+  width:1160px;
+  margin:0 auto;
+  padding-top:69px;
+  background-color: #FFFFFF;
   background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: top;
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid #b46e6e;
+}
+
+.services-group{
+  display: flex;
+  flex-direction: row;
+  margin:0;
+  background-color:#f0f0f0;
+  box-shadow: inset 0 100px #ffffff;
+}
+
+ul.services-pagination{
+  width:273px;
+  min-height:319px;
+  margin:0;
+  padding:0;
+  border-right: 7px solid rgba(0, 0, 0, 1);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  outline: 1px solid #6eb485;
+}
+
+.services-pagination-item{
+  display: flex;
+  width:279px;
+  min-height:40px;
+  margin:0;
+  padding-top:auto;
+  padding-bottom:auto;
+  outline: 1px solid #6eb485;
+}
+
+.services-pagination-item-2{
+  display: flex;
+  width:279px;
+  min-height:40px;
+  margin-top:24px;
+  margin-bottom:25px;
+  padding-top:auto;
+  padding-bottom:auto;
+  outline: 1px solid #6eb485;
+}
+
+.services-pagination-item-current{
+  background-color:#000000;
+  color:#FFE17F;
+  border:none;
+  outline: 1px solid #6eb485;
+}
+
+.services-pagination-link{
+  width:160px;
+  height:20px;
+  margin-top:10px;
+  padding-top:auto;
+  padding-bottom:auto;
+  outline: 1px solid #6eb485;
+}
+
+ul.services-list{
+  width:760px;
+  list-style: none;
+  margin:0;
+  padding-left:120px;
+  display:flex;
+  flex-direction: column;
+  outline: 1px solid #8f6eb4;
+}
+
+.services-list-item{
+  min-height:319px;
+  outline: 1px solid rgb(192, 16, 16);
+}
+
+
+.delivery-img{
+  background-image:url("../img/delivery-man.svg");
+  background-size: 136px 164px;
+  background-repeat: no-repeat;
+  background-position: 90%;
 }
 
 .warranty-img{
-background-color: #F0F0F0;
 background-image:url("../img/warranty-1.svg");
-background-size: 164px;
+background-size: 171px 195px;
 background-repeat: no-repeat;
-background-position-x: center;
-background-position-y: top;
+background-position: 90%;
 }
 
 .credit-img{
-background-color: #F0F0F0;
 background-image:url("../img/credit-1.svg");
-background-size: 164px;
+background-size: 156px 188px;
 background-repeat: no-repeat;
-background-position-x: center;
-background-position-y: top;
+background-position: 90%;
 }
 
 .services-list-item-name{
+  width:560px;
+  margin:0;
+  padding-top:70px;
   color: #000000;
   font-family:"Raleway", sans-serif;
   font-size: 50px;
@@ -670,9 +773,116 @@ background-position-y: top;
   font-weight: 800;
   text-align: left;
   font-style: normal;
+  outline: 1px solid rgba(0, 0, 0, 1);
 }
 
-.services-delivery-link-txt {
+.services-list-item-description{
+  width:497px;
+  padding-top:34px;
+  margin:0;
+  outline: 1px solid rgba(0, 0, 0, 1);
+  white-space:pre-line;
+}
+
+/*************************************
+
+.services-delivery{
+  min-height:356px;
+  margin:0;
+  padding-left:0px;
+  padding-top:159px;
+  padding-bottom:97px;
+  box-shadow: inset 0 69px #F0F0F0;
+  outline: 1px solid rgb(41, 211, 202);
+  background:#ffffff;
+}
+
+.services-delivery-link::before{
+  display: flex;
+  width: 125px;
+  height: 100px;
+  background-color:#FFE17F;
+  content:"";
+  margin: 0;
+  outline: 1px solid rgb(223, 112, 22);
+}
+
+.delivery-1::before{
+  background-image: url("../img/delivery-1.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  content:"";
+}
+
+
+.services-delivery-link{
+  display: flex;
+  width:1160px;
+  min-height:100px;
+  outline: 1px solid rgb(41, 211, 202);
+  background-color: #F0F0F0;
+  text-decoration: none;
+  outline: 1px solid rgb(41, 211, 202);
+}
+
+.services-delivery-link-txt{
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  line-height:23px;
+  font-weight: 800;
+  text-align: left;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  outline: 1px solid rgb(41, 211, 92);
+}
+
+.services-delivery-button-info{
+  width:40px;
+  height:40px;
+  background-image:url("../img/info.svg");
+  background-repeat: no-repeat;
+}
+
+*/
+
+.services-delivery{
+  margin:0;
+  padding-left:0px;
+  padding-top:159px;
+  padding-bottom:97px;
+  box-shadow: inset 0 69px #F0F0F0;
+  outline: 1px solid rgb(41, 211, 202);
+  background:#ffffff;
+  display: flex;
+  flex-direction: row;
+}
+
+.services-delivery-link-1{
+  margin: 0;
+  min-height: 100px;
+  width: 125px;
+  background-color:#FFE17F;
+  outline: 1px solid rgb(223, 112, 22);
+  background-image: url("../img/delivery-1.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.services-delivery-link-2{
+  width:932px;
+  background-color: #F0F0F0;
+  text-decoration: none;
+  outline: 1px solid rgb(211, 41, 183);
+  display: flex;
+  padding-left:0;
+  padding-top:37px;
+  padding-bottom:40px;
+}
+
+.services-delivery-link-txt{
+  width:910px;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   line-height:23px;
@@ -682,9 +892,49 @@ background-position-y: top;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  outline: 1px solid rgb(41, 211, 92);
+}
+
+.services-delivery-button-info{
+  width:103px;
+  height:100px;
+  background-image:url("../img/info.svg");
+  background-size:40px 40px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-color: #F0F0F0;
+  border:0px;
+  outline: 1px solid rgb(192, 95, 16);
+}
+
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+about-us-contacts*/
+
+.about-us-contacts{
+  width:1160px;
+  margin:0 auto;
+  padding:0;
+  display: flex;
+  align-items: right;
+  flex-direction: row;
+  outline: 1px solid rgb(192, 95, 16);
+}
+
+.about-us{
+  width:560px;
+  margin:0;
+  padding-left:0;
+  padding-top:49px;
+  padding-right:0;
+  background-image: url("../img/divider.svg");
+  background-repeat: no-repeat;
+  outline: 1px solid rgb(192, 95, 16);
 }
 
 .subtitle-h2{
+  width:560px;
+  margin:0;
   color: #000000;
   font-family:"Raleway", sans-serif;
   font-size: 50px;
@@ -692,58 +942,174 @@ background-position-y: top;
   font-weight: 800;
   text-align: left;
   font-style: normal;
+  outline: 1px solid rgb(192, 95, 16);
 }
 
-.services-delivery{
-  background-color: #F0F0F0;
-  background-image:url("../img/delivery-1.svg");
-  background-size: 47px;
-  background-repeat: no-repeat;
-  background-position-x: 20px;
-  background-position-y: center;
-
-}
-
-
-.contacts-address-subtitle{
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-}
-
-.contacts-schedule-subtitle{
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
+.about-us-txt{
+  margin:0;
+  width:497px;
+  padding-top:26px;
+  outline: 1px solid rgb(192, 95, 16);
 }
 
 .about-us-3pl{
+  width:497px;
+  margin:0;
+  padding:0;
+  padding-bottom: 52px;
+  list-style:none;
+  outline: 1px solid rgb(192, 95, 16);
   color:#000000;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
 }
 
-.contacts-address {
-  color: #444444;
-  font-style: normal;
+.about-us-3pl-company::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #FFC700; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 2em; /* Also needed for space (tweak if needed) */
+  margin-left: 0 em; /* Also needed for space (tweak if needed) */
 }
-.contacts-phone {
+
+.contacts{
+  width:560px;
+  margin:0;
+  padding-left:40px;
+  padding-right:0;
+  padding-top:49px;
+  background-image: url("../img/divider.svg");
+  background-position: 40px 0px;
+  background-repeat: no-repeat;
+  outline: 1px solid rgb(17, 17, 17);
+}
+
+.contacts-txt{
+  width:498px;
+  margin:0;
+  padding-top:26px;
+  outline: 1px solid rgb(17, 17, 17);
+}
+
+.contacts-address-subtitle{
+  width:358px;
+  margin:0;
+  padding-top:30px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  outline: 1px solid rgb(17, 17, 17);
+}
+
+
+.contacts-address-txt{
+  width:513px;
+  margin:0;
+  padding:0;
+  padding-top:15px;
   color: #444444;
   font-style: normal;
+  outline: 1px solid rgb(17, 17, 17);
+}
+
+.contacts-phone {
+  width:513px;
+  margin:0;
+  padding:0;
+  color: #444444;
+  font-style: normal;
+  outline: 1px solid rgb(17, 17, 17);
+}
+
+.contacts-schedule-subtitle{
+  width:175px;
+  margin:0;
+  padding:0;
+  padding-top:30px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  outline: 1px solid rgb(17, 17, 17);
+}
+
+.contacts-schedule{
+  width:204px;
+  margin:0;
+  padding:0;
+  padding-top:15px;
+  padding-bottom:67px;
+  list-style: none;
+  outline: 1px solid rgb(17, 17, 17);
 }
 
 .mailing{
-  background-color: #F0F0F0;
+  width:100%;
+  margin:0 auto;
+  background-color:#F0F0F0;
+}
+
+.mailing-container{
+  width:1160px;
+  margin:0 auto;
+  padding:0;
+  padding-top:75px;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: right;
+}
+
+.mailing-subtitle-h2{
+  width:560px;
+  margin:0;
+  padding:0;
+  color: #000000;
+  font-family:"Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+  text-align: left;
+  font-style: normal;
+  outline: 1px solid #104dbd;
+}
+
+.mailing-description{
+  width:560px;
+  margin:0;
+  padding:0;
+  padding-left:40px;
+  outline: 1px solid #104dbd;
+}
+
+.mailing-submission{
+  width:600px;
+  margin:0;
+  margin-bottom:134px;
+  padding-left:0;
+  padding-right:0;
+  padding-top:53px;
+  padding-bottom:9px;
+  outline: 1px solid #104dbd;
+  border-bottom: 3px solid rgb(0, 0, 0, 0.1);
 }
 
 .mailing-submission-email{
+  width:560px;
+  margin:0;
+  padding:0;
   font-size: 18px;
   line-height: 30px;
   opacity: 50%;
+  background-color:#F0F0F0;
+  border: 0px solid rgb(0, 0, 0, 0);
 }
 
 .mailing-submission-button{
+  width:260px;
+  height:55px;
+  margin:0;
+  margin-top:40px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -753,7 +1119,26 @@ background-position-y: top;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  border-style: none;
+  border: 3px solid rgb(0, 0, 0, 0.1);
 }
+
+.mailing-for-free{
+  width:164px;
+  margin:0;
+  padding:0;
+  padding-left:136px;
+  padding-top:53px;
+  text-align: right;
+  outline: 1px solid #104dbd;
+  background:url("../img/tick-big1.svg");
+  background-position: 136px 61px;
+  background-size: 14px;
+  background-repeat: no-repeat;
+}
+
+
+
 
 /*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
 /* Catalog */
@@ -906,14 +1291,66 @@ background-position-y: top;
   text-decoration: none;
 }
 
-/* footer */
+
+
+/*------------------footer------------------------------*/
 
 .footer {
+  width:100%;
+  height:321px;
   background-color:#444444;
   color: #FFFFFF;
+  margin:0;
+  padding-top:62px;
+  padding-bottom:61px;
+}
+
+.footer-container{
+  width: 1160px;
+  min-height: 198px;
+  margin:0 auto;
+  padding:0;
+  display:flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: left;
+  flex-flow: wrap;
+  background-image: url("../img/divider-yellow.svg");
+  background-position: 0px 175px;
+  background-repeat: no-repeat;
+  outline: 1px solid rgb(16, 192, 39);
+}
+
+.footer-logo{
+  width:1160px;
+  height:36px;
+  margin:0;
+  padding:0;
+  padding-bottom:35px;
+  outline: 1px solid rgb(192, 95, 16);
+}
+
+.footer-navigation-list{
+  width:458px;
+  margin:0;
+  margin-left:114px;
+  padding:0;
+  list-style: none;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  outline: 1px solid rgb(192, 95, 16);
+}
+
+.footer-navigation-item{
+  outline: 1px solid rgb(16, 192, 133);
 }
 
 .footer-navigation-link{
+  display: block;
+  width:148px;
+  margin:0;
+  padding:0;
   color: #FFFFFF;
   font-family:"Raleway", sans-serif;;
   font-size: 18px;
@@ -924,36 +1361,77 @@ background-position-y: top;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.2em;
+  outline: 1px solid rgb(192, 95, 16);
 }
 
 .footer-contacts-address{
+  width:239px;
+  margin:0;
+  padding:0;
+  outline: 1px solid rgb(43, 39, 36);
+}
+
+.footer-contacts-address-txt{
+  width:239px;
+  margin:0;
+  padding:0;
   font-family:"Rubik",sans-serif;
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
   text-align: left;
+  vertical-align: bottom;
   font-style: normal;
+  outline: 1px solid rgb(202, 96, 14);
 }
 
 .footer-contacts-address-phone{
+  width:349px;
+  margin:0;
+  padding:0;
+  outline: 1px solid rgb(192, 95, 16);
+  display:flex;
+  align-items: top;
+}
+
+.footer-contacts-phone{
+  width:349px;
+  align-self: top;
+  margin:0;
+  padding:0;
   color: #FFFFFF;
   font-family:"Rubik",sans-serif;
   font-size: 16px;
   line-height: 30px;
   font-weight: 400;
   text-align: right;
+  text-decoration: none;
+  outline: 1px solid rgb(192, 95, 16);
+  vertical-align: top;
 }
 
+.footer-social{
+  width:540px;
+  padding:0;
+  padding-left:505px;
+  padding-right:0;
+  outline: 1px solid rgb(51, 192, 16);
+  padding-top:49px;
+}
 
 .footer-social-list{
   width: 150px;
   height: 40px;
+  margin:0;
+  padding:0;
+  padding-left:0;
   list-style: none;
   background-repeat: no-repeat;
   display:flex;
   flex-direction:row;
   justify-content:space-between;
   align-items: center;
+  outline: 1px solid rgb(192, 95, 16);
 }
 
 .footer-social-item{
@@ -991,4 +1469,10 @@ background-position-y: top;
   background-repeat: no-repeat;
 }
 
+.logo-html-academy{
+  margin:0;
+  padding:0;
+  padding-top:47px;
+  outline: 1px solid rgb(192, 95, 16);
+}
 
