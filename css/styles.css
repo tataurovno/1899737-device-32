@@ -174,9 +174,11 @@ body {
   opacity: 30%;
   background-color: #FFE17F;
   border: 0px solid rgba(0, 0, 0, 0);
+
 }
 
 .user-menu-link-in{
+  display:block;
   width:220px;
   height:21px;
   text-decoration: none;
@@ -188,6 +190,7 @@ body {
   padding-left:24px;
   padding-right:0px;
   margin-right:0;
+
 }
 
 .user-menu-link-compare{
@@ -201,6 +204,7 @@ body {
   background-size: 12px 10px;
   background-repeat: no-repeat;
   padding-left:20px;
+
 }
 
 .user-menu-link-basket{
@@ -213,6 +217,7 @@ body {
   background-size: 16px 14px;
   background-repeat: no-repeat;
   padding-left:26px;
+
 }
 
 .user-menu-link-quantity{
@@ -227,6 +232,7 @@ body {
   border-radius: 50%;
   background-repeat: no-repeat;
   text-decoration:none;
+
 }
 
 .user-menu-quantity{
@@ -237,15 +243,32 @@ body {
   text-decoration:none;
  }
 
+.user-menu-link-out{
+  position: relative;
+}
+
+.user-menu-link-out-link{
+  position: absolute;
+  right:37px;
+  z-index: 1000;
+  opacity:30%;
+  text-decoration: none;
+}
+
  .user-menu-link-txt{
   color: #000000;
   font-size: 16px;
   line-height: 19px;
   text-decoration: none;
   vertical-align: 50%;
+
 }
 
+
+
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
 
 .main-menu{
   display: flex;
@@ -1279,7 +1302,42 @@ about-us-contacts*/
   outline: 1px solid #104dbd;
 }
 
+.catalog-filter-form{
+  width:200px;
+  margin:0;
+  margin-left:60px;
+  padding:0;
+  padding-top:71px;
+}
+
+.catalog-filter-group{
+
+  margin:0;
+  padding:0;
+  display: flex;
+  flex-direction: column;
+  border:none;
+  border-top: 2px solid #000000;
+  outline: 2px solid #10bd44;
+}
+
+.catalog-filter-list{
+  margin:0;
+  padding:0;
+  padding-top:14px;
+  list-style: none;
+}
+
+.catalog-filter-item{
+  margin:0;
+  padding:0;
+  padding-bottom:21px;
+}
+
 .catalog-filter-subtitle-h3{
+  margin:0;
+  padding-top:12px;
+  padding-bottom:14px;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
@@ -1293,6 +1351,12 @@ about-us-contacts*/
   text-align: center;
   opacity: 30%;
 }
+
+.catalog-filter-button{
+  width:200px;
+  margin:0px;
+}
+
 
 .catalog-products{
   width:760px;
@@ -1384,26 +1448,22 @@ about-us-contacts*/
   margin:0;
   padding:0;
   padding-top:69px;
+  padding-bottom:44px;
   list-style: none;
   outline: 5px solid #bd10a6;
-  display:flex;
-  flex-wrap: wrap;
+  display:grid;
+  grid-template-columns: 360px 360px;
+  gap: 40px;
 }
 
 .product-card{
-  width:360px;
   margin:0;
   padding:0;
-  padding-bottom:44px;
-  outline: 1px solid #bd10a6;
+  outline: 1px solid #3e10bd;
   display:flex;
   flex-wrap: wrap;
 }
 
-.product-list li:nth-child(2n){
-  padding-left:40px;
-  padding-right:0;
-}
 
 .product-card-link-img{
   width:360px;

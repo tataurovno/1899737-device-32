@@ -20,11 +20,13 @@
             <input class="search-input" type="text" name="search" placeholder="Поиск по сайту">
           </form>
           <a class="user-menu-link-in" href="#">
-            <span class="user-menu-link-txt">Войти</span>
+            <span class="user-menu-link-txt">Коля Петухов</span>
           </a>
-          <a class="user-menu-link-out" href="#">
-            <span class="visually-hidden">Выйти</span>
-          </a>
+          <div class="user-menu-link-out">
+            <a class="user-menu-link-out-link" href="#">
+              <span class="user-menu-link-txt">Выйти</span>
+            </a>
+          </div>
           <a class="user-menu-link-compare" href="#">
             <span class="user-menu-link-txt">Сравнить</span>
           </a>
@@ -120,35 +122,35 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="black" checked>
+                    <input class="control-input" type="checkbox" name="black" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Черный</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="white" checked>
+                    <input class="control-input" type="checkbox" name="white" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Белый</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="blue">
+                    <input class="control-input" type="checkbox" name="blue">
                     <span class="control-mark"></span>
                     <span class="control-label">Синий</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="red">
+                    <input class="control-input" type="checkbox" name="red">
                     <span class="control-mark"></span>
                     <span class="control-label">Красный</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="pink">
+                    <input class="control-input" type="checkbox" name="pink">
                     <span class="control-mark"></span>
                     <span class="control-label">Розовый</span>
                   </label>
@@ -161,21 +163,21 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="bluetooth" checked>
+                    <input class="control-input" type="radio" name="bluetooth" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Есть</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="bluetooth">
+                    <input class="control-input" type="radio" name="bluetooth">
                     <span class="control-mark"></span>
                     <span class="control-label">Нет</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <button class="button" type="submit">Показать</button>
+            <button class="button catalog-filter-button" type="submit">Показать</button>
           </form>
         </section>
 
