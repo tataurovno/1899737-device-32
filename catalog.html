@@ -19,20 +19,49 @@
             </button>
             <input class="search-input" type="text" name="search" placeholder="Поиск по сайту">
           </form>
-          <a class="user-menu-link-in" href="#">
-            <span class="user-menu-link-txt">Коля Петухов</span>
-          </a>
-          <div class="user-menu-link-out">
-            <a class="user-menu-link-out-link" href="#">
+          <div class="user-menu-container">
+            <a class="user-menu-link-in" href="#">
+              <span class="user-menu-link-txt">Коля Петухов</span>
+            </a>
+            <a class="user-menu-link-out" href="#">
               <span class="user-menu-link-txt">Выйти</span>
             </a>
+            <a class="user-menu-link-compare" href="#">
+              <span class="user-menu-link-txt">Сравнить</span>
+            </a>
+            <a class="user-menu-link-basket" href="#">
+              <span class="user-menu-link-txt" >Корзина</span>
+            </a>
+            <div class="basket-popover-container">
+              <div class="basket-popover">
+                <h2 class="visually-hidden">Всплывающее окно Корзины</h2>
+                <ul class="basket-popover-list">
+                  <li class="basket-popover-item">
+                    <img class="basket-popover-item-image" height="41" width="43" src="img/product-1-small.png" alt="Любительская селфи-палка">
+                    <p class="basket-popover-item-txt">Любительская селфи-палка</p>
+                    <button class="basket-popover-item-deletion" type="button">
+                      <span class="visually-hidden">Удаление позиции из корзины</span>
+                    </button>
+                  </li>
+                  <li class="basket-popover-item">
+                    <img class="basket-popover-item-image" height="41" width="43" src="img/product-2-small.png" alt="Профессиональная селфи-палка">
+                    <p class="basket-popover-item-txt">Профессиональная селфи-палка</p>
+                    <button class="basket-popover-item-deletion" type="button">
+                      <span class="visually-hidden">Удаление позиции из корзины</span>
+                    </button>
+                  </li>
+
+                </ul>
+                <div class="basket-popover-total">
+                  <p class="basket-popover-goods">Товаров:</p>
+                  <p class="basket-popover-count">2xxx</p>
+                  <p class="basket-popover-sum">Сумма:</p>
+                  <p class="basket-popover-cost">200000 ₽</p>
+                </div>
+                <a class="button basket-popover-link-button" href="">Открыть корзину</a>
+              </div>
+            </div>
           </div>
-          <a class="user-menu-link-compare" href="#">
-            <span class="user-menu-link-txt">Сравнить</span>
-          </a>
-          <a class="user-menu-link-basket" href="#">
-            <span class="user-menu-link-txt" >Корзина</span>
-          </a>
         </div>
         <a class="user-menu-link-quantity" href="#">
           <span class="user-menu-quantity">2</span>
@@ -41,26 +70,28 @@
         <ul class="main-menu">
           <li class="main-menu-item-catalog">
             <a class="main-menu-link" href="catalog.html">Каталог товаров</a>
-            <ul class="main-menu-categories">
-              <li class="main-menu-categories-item">
-                <a class="main-menu-categories-link" href="virtual-reality.html">Виртуальная реальность</a>
-              </li>
-              <li class="main-menu-categories-item">
-                <a class="main-menu-categories-link" href="monopods.html">Моноподы для селфи</a>
-              </li>
-              <li class="main-menu-categories-item">
-                <a class="main-menu-categories-link" href="action-cams.html">Экшн-камеры</a>
-              </li>
-              <li class="main-menu-categories-item">
-                <a class="main-menu-categories-link" href="fitness-bracelets.html">Фитнес-браслеты</a>
-              </li>
-              <li class="main-menu-categories-item">
-                <a class="main-menu-categories-link" href="smart-watch.html">Умные часы</a>
-              </li>
-              <li class="main-menu-categories-item">
-                <a class="main-menu-categories-link" href="copters.html">Квадрокоптеры</a>
-              </li>
-            </ul>
+            <div class="main-menu-categories-container">
+              <ul class="main-menu-categories">
+                <li class="main-menu-categories-item grid-1">
+                  <a class="main-menu-categories-link" href="virtual-reality.html">Виртуальная реальность</a>
+                </li>
+                <li class="main-menu-categories-item grid-1">
+                  <a class="main-menu-categories-link" href="monopods.html">Моноподы для селфи</a>
+                </li>
+                <li class="main-menu-categories-item grid-1">
+                  <a class="main-menu-categories-link" href="action-cams.html">Экшн-камеры</a>
+                </li>
+                <li class="main-menu-categories-item grid-2-1">
+                  <a class="main-menu-categories-link" href="fitness-bracelets.html">Фитнес-браслеты</a>
+                </li>
+                <li class="main-menu-categories-item grid-2-2">
+                  <a class="main-menu-categories-link" href="smart-watch.html">Умные часы</a>
+                </li>
+                <li class="main-menu-categories-item grid-3-1">
+                  <a class="main-menu-categories-link" href="copters.html">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="main-menu-item-catalog-button">
             <button class="main-menu-item-catalog-button-circle" type="button">
