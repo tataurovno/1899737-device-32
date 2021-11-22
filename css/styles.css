@@ -2010,6 +2010,7 @@ about-us-contacts*/
   padding:0;
   display:flex;
   flex-wrap: wrap;
+  position: relative;
 }
 
 
@@ -2058,6 +2059,31 @@ about-us-contacts*/
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+
+.product-card-details-button{
+  content:"";
+  position:absolute;
+  top:180px;
+  left:50%;
+  transform:translateX(-50%);
+  width:220px;
+  display:none;
+}
+
+.product-card-details-button:hover{
+  display:block;
+  width:220px;
+  height:50px;
+  background:#ffc700;
+  box-shadow: inset 0 50px #ffc700;
+}
+
+.product-card:hover .product-card-details-button{
+  display:block;
+  background:linear-gradient(to bottom, transparent 0 35%,#ffe17f 35% 75%, transparent 75% 100%);
+  box-shadow:none;
 }
 
 
