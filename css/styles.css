@@ -2049,6 +2049,21 @@ about-us-contacts*/
 
 
 .product-card-new{
+  width:60px;
+  height:60px;
+  position:absolute;
+  z-index: 1;
+  top:27px;
+  left:273px;
+  margin:0;
+  padding:0;
+  padding-top:20px;
+  padding-left:4px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid rgb(0, 0, 0, 0.6);
+  background-color:transparent;
+  background-position: 50% 50% ;
   color:rgba(0, 0, 0, 0.6);
   font-family:"Raleway", sans-serif;
   font-size: 14px;
