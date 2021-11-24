@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/favicon.ico">
   </head>
 
   <body>
@@ -13,15 +14,18 @@
           <img class="logo-black" src="img/device-black.svg" height="36" width="145" alt="Логотип Интернет-магазина гаджетов ''Девайс''">
         </a>
         <div class="user-menu">
-          <form class="search" action="https://echo.htmlacademy.ru/" method="post">
-            <button class="search-button" type="submit">
-              <label class="visually-hidden">Поиск по сайту</label>
-            </button>
-            <input class="search-input" type="text" name="search" placeholder="Поиск по сайту">
-          </form>
+
+            <form class="search" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="search-wrapper">
+                <input class="search-input search-input-default" type="text" name="search" placeholder="Поиск по сайту">
+                <button class="search-button" type="submit">Найти
+                </button>
+              </div>
+            </form>
+
           <div class="user-menu-container">
             <a class="user-menu-link-in" href="#">
-              <span class="user-menu-link-txt">Войти</span>
+              <span class="user-menu-link-txt .user-menu-link-in-icon">Войти</span>
             </a>
             <a class="user-menu-link-out" href="#">
               <span class="visually-hidden">Выйти</span>
@@ -32,6 +36,11 @@
             <a class="user-menu-link-basket" href="#">
               <span class="user-menu-link-txt" >Корзина</span>
             </a>
+            <a class="user-menu-link-quantity" href="#">
+              <span class="user-menu-quantity">2</span>
+            </a>
+
+
             <div class="basket-popover-container">
               <div class="basket-popover">
                 <h2 class="visually-hidden">Всплывающее окно Корзины</h2>
@@ -63,9 +72,6 @@
             </div>
           </div>
         </div>
-        <a class="user-menu-link-quantity" href="#">
-          <span class="user-menu-quantity">2</span>
-        </a>
 
         <ul class="main-menu">
           <li class="main-menu-item-catalog">
@@ -256,7 +262,7 @@
 
             <li class="categories-item">
               <a class="categories-link cat-img-2" href="#">
-                <span class="categories-title">Моноподы для селфи</span>
+                <span class="categories-title">Моноподы<br>для селфи</span>
               </a>
             </li>
 
@@ -372,7 +378,7 @@
                         <span class="visually-hidden">Уменьшить количество</span>
                       </button>
                       <label class="modal-form-set-quantity-label" for="modal-form-quantity">
-                        <input class="modal-form-set-quantity-input" type="number" name="modal-form-quantity">
+                        <input class="modal-form-set-quantity-input" type="number" name="modal-form-quantity" id="modal-form-quantity" placeholder="1">
                       </label>
                       <button class="modal-form-set-quantity set-quantity-add" type="button">
                         <span class="visually-hidden">Увеличить количество</span>
@@ -417,7 +423,7 @@
 
         <section class="mailing">
           <div class="mailing-container">
-            <h2 class="mailing-subtitle-h2">Подпишитесь на рассылку</h2>
+            <h2 class="mailing-subtitle-h2">Подпишитесь<br>на рассылку</h2>
             <p class="mailing-description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
             <form class="mailing-submission" action="https://echo.htmlacademy.ru/" method="post">
               <input class="mailing-submission-email" type="email" name="mailing-submission-email" placeholder="Ваш e-mail">
@@ -461,6 +467,11 @@
 
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
+          <div class="logo-html-academy-container">
+            <a class="logo-html-academy" href="https://htmlacademy.ru/">
+              <img class="logo-html-academy-logo" height="33" width="115" src="img/logo-htmlacademy-1.svg" alt="Логотип .html academy">
+            </a>
+          </div>
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="footer-social-link facebook" href="https://www.facebook.com/htmlacademy">
@@ -479,10 +490,6 @@
             </li>
           </ul>
         </section>
-
-        <a class="logo-html-academy" href="https://htmlacademy.ru/">
-          <img class="logo-html-academy-logo" height="33" width="115" src="img/logo-htmlacademy-1.svg" alt="Логотип .html academy">
-        </a>
       </div>
     </footer>
 

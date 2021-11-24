@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/favicon.ico">
   </head>
 
   <body>
@@ -13,18 +14,21 @@
           <img class="logo-black" src="img/device-black.svg" height="36" width="145" alt="Логотип Интернет-магазина гаджетов ''Девайс''">
         </a>
         <div class="user-menu">
-          <form class="search" action="https://echo.htmlacademy.ru/" method="post">
-            <button class="search-button" type="submit">
-              <label class="visually-hidden">Поиск по сайту</label>
-            </button>
-            <input class="search-input" type="text" name="search" placeholder="Поиск по сайту">
-          </form>
+
+            <form class="search" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="search-wrapper">
+                <input class="search-input search-input-default" type="text" name="search" placeholder="Поиск по сайту">
+                <button class="search-button" type="submit">Найти
+                </button>
+              </div>
+            </form>
+
           <div class="user-menu-container">
             <a class="user-menu-link-in" href="#">
-              <span class="user-menu-link-txt">Коля Петухов</span>
+              <span class="user-menu-link-txt .user-menu-link-in-icon">Войти</span>
             </a>
             <a class="user-menu-link-out" href="#">
-              <span class="user-menu-link-txt">Выйти</span>
+              <span class="visually-hidden">Выйти</span>
             </a>
             <a class="user-menu-link-compare" href="#">
               <span class="user-menu-link-txt">Сравнить</span>
@@ -32,6 +36,10 @@
             <a class="user-menu-link-basket" href="#">
               <span class="user-menu-link-txt" >Корзина</span>
             </a>
+            <a class="user-menu-link-quantity" href="#">
+              <span class="user-menu-quantity">2</span>
+            </a>
+
             <div class="basket-popover-container">
               <div class="basket-popover">
                 <h2 class="visually-hidden">Всплывающее окно Корзины</h2>
@@ -63,9 +71,7 @@
             </div>
           </div>
         </div>
-        <a class="user-menu-link-quantity" href="#">
-          <span class="user-menu-quantity">2</span>
-        </a>
+
 
         <ul class="main-menu">
           <li class="main-menu-item-catalog">
@@ -149,10 +155,10 @@
 
               <div class="range-wrapper-inputs">
                   <label class="catalog-filter-label">
-                    от <input class="range-input" type="number" name="min-price">
+                    от <input class="range-input" type="number" name="min-price" placeholder="0">
                   </label>
                   <label class="catalog-filter-label">
-                    до <input class="range-input" type="number" name="max-price">
+                    до <input class="range-input" type="number" name="max-price" placeholder="5000">
                   </label>
               </div>
             </div>
@@ -234,10 +240,10 @@
               <button class="visually-hidden" type="submit">Отсортировать продукты</button>
             </form>
             <button class="sorting-sorting-type-ascending" type="submit">
-              <label class="visually-hidden">По возрастанию</label>
+              <span class="visually-hidden">По возрастанию</span>
             </button>
             <button class="sorting-sorting-type-descending" type="submit">
-              <label class="visually-hidden">По убыванию</label>
+              <span class="visually-hidden">По убыванию</span>
             </button>
           </div>
 
@@ -256,8 +262,8 @@
               <a class="product-card-link-img" href="product.html">
                 <img class="product-card-image" src="img/product-2.jpg" width="360" height="380" alt="Фото профессиональной селфи-палки">
               </a>
-              <a class="product-card-link-txt" href="product.html">Профессиональная селфи-палка</a>
-              <p class="product-card-price">1500 ₽</p>
+              <a class="product-card-link-txt" href="product.html">Профессиональная<br>селфи-палка</a>
+              <p class="product-card-price">1 500 ₽</p>
               <a class="button product-card-details-button" href="product.html">Подробнее</a>
               <span class="visually-hidden product-card-new">New</span>
             </li>
@@ -265,8 +271,8 @@
               <a class="product-card-link-img" href="product.html">
                 <img class="product-card-image" src="img/product-3.jpg" width="360" height="380" alt="Фото непотопляемой селфи-палки">
               </a>
-              <a class="product-card-link-txt" href="product.html">Непотопляемая селфи-палка</a>
-              <p class="product-card-price">2500 ₽</p>
+              <a class="product-card-link-txt" href="product.html">Непотопляемая<br>селфи-палка</a>
+              <p class="product-card-price">2 500 ₽</p>
               <a class="button product-card-details-button" href="product.html">Подробнее</a>
               <span class="visually-hidden product-card-new">New</span>
             </li>
@@ -275,7 +281,7 @@
                 <img class="product-card-image" src="img/product-4.jpg" width="360" height="380" alt="Фото селфи-палки «Следуй за мной»">
               </a>
               <a class="product-card-link-txt" href="product.html">Селфи-палка «Следуй за мной»</a>
-              <p class="product-card-price">4900 ₽</p>
+              <p class="product-card-price">4 900 ₽</p>
               <a class="button product-card-details-button" href="product.html">Подробнее</a>
               <span class="product-card-new">New</span>
             </li>
@@ -347,6 +353,13 @@
 
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
+
+          <div class="logo-html-academy-container">
+            <a class="logo-html-academy" href="https://htmlacademy.ru/">
+              <img class="logo-html-academy-logo" height="33" width="115" src="img/logo-htmlacademy-1.svg" alt="Логотип .html academy">
+            </a>
+          </div>
+
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="footer-social-link facebook" href="https://www.facebook.com/htmlacademy">
@@ -365,10 +378,6 @@
             </li>
           </ul>
         </section>
-
-        <a class="logo-html-academy" href="https://htmlacademy.ru/">
-          <img class="logo-html-academy-logo" height="33" width="115" src="img/logo-htmlacademy-1.svg" alt="Логотип .html academy">
-        </a>
       </div>
     </footer>
 
